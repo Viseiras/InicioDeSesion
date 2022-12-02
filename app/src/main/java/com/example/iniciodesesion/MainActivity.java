@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         Button button= findViewById(R.id.button);
 
         button.setOnClickListener(v -> {
-                    Intent intent = new Intent(this, ItemFragment.class);
+                    Intent intent = new Intent(this, ListaBichos.class);
                     startActivity(intent);
                 }
         );

@@ -30,7 +30,10 @@ public class PlaceholderContent {
         /*for (int i = 1; i <= COUNT; i++) {
             addItem(createPlaceholderItem(i));
         }*/
-        addItem((new PlaceholderItem("1","Algo","Algo pero detallado")));
+        addItem(new PlaceholderItem("1","Goliat","Escarabajo rojizo con un asta central y de gran tamaño"));
+        addItem(new PlaceholderItem("2","Monarca","Mariposa aranjada muy famosa por su belleza y por ser uno de los animales más coloridos de la naturaleza"));
+        addItem(new PlaceholderItem("3","Escorpion","Artropodo con un apendice para suministrar veneno y unas pinzas para atacar a sus presas o depredadores"));
+        addItem(new PlaceholderItem("4","Kabuto","Pokemon basado en un trilobite"));
     }
 
     private static void addItem(PlaceholderItem item) {

@@ -2,6 +2,7 @@ package com.example.iniciodesesion;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,6 +37,16 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
         holder.mItem = mValues.get(position);
         holder.mIdView.setText(mValues.get(position).id);
         holder.mContentView.setText(mValues.get(position).content);
+
+        holder.mContentView.setOnClickListener(l -> {
+
+            Intent intent = new Intent(l.getContext(), Detalle.class);
+            intent.putExtra("ID", holder.mItem.id);
+            intent.putExtra("CONTENT", holder.mItem.content);
+            intent.putExtra("DETALLE", holder.mItem.details);
+
+            l.getContext().startActivity(intent);
+        });
     }
 
     @Override

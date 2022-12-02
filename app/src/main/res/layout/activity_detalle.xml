@@ -6,10 +6,109 @@
     android:layout_height="match_parent"
     tools:context=".Detalle">
 
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="289dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="390dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="246dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="607dp"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/detalleView"
+        android:layout_width="246dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="397dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="208dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="579dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="104dp"
+        android:contentDescription="Cosas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="531dp"
+        android:layout_marginEnd="318dp"
+        android:layout_marginBottom="152dp"
+        android:text="CAZADO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-    />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="659dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_gravity="bottom"
+            app:layout_anchor="@+id/bottomAppBar"
+            app:layout_anchorGravity="bottom|center" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:contentDescription="Like y Favoritos"
+            app:layout_anchor="@+id/bottomAppBar"
+            app:layout_anchorGravity="center"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="157dp"
+            android:layout_height="56dp"
+            android:text=" Algo" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">InicioDeSesion</string>
+    <string-array name="nombres">
+        <item>Hercules</item>
+        <item>Monarca</item>
+        <item>Escorpión</item>
+        <item>Kabuto</item>
+    </string-array>
 </resources>
